@@ -23,3 +23,11 @@ inoremap <silent> <c-y> <Esc> :redo<CR>
 
 :nmap <silent> <c-n> :enew<CR>
 inoremap <silent> <c-n> <Esc> :enew<CR>
+
+nnoremap <silent> <c-up> :m.-2<CR> ==
+inoremap <silent> <c-up> <Esc> :m.-2<CR> == gi
+vnoremap <silent> <c-up> :m '<-2 <CR> gv = gv
+
+nnoremap <silent> <c-down> :m.+1<CR> ==
+inoremap <silent> <c-down> <Esc> :m.+1<CR> == gi
+vnoremap <silent> <c-down> :m '> +1 <CR> gv = gv
