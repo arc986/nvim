@@ -16,6 +16,10 @@ set smartcase
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set hidden
 
 if has('macunix')
   let g:onedark_termcolors=256
