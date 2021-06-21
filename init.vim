@@ -27,6 +27,7 @@ Plug 'mitsuhiko/flask'                              " Framework Flask
 Plug 'wavded/vim-stylus'                            " stylus lang
 Plug 'tpope/vim-haml'                               " haml lang
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}   " Go lang
+Plug 'rust-lang/rust.vim'                           " Rust lang
 call plug#end()
 
 ": SOURCES
