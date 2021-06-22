@@ -21,6 +21,7 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set hidden
+set cursorline
 
 if has('macunix')
   let g:onedark_termcolors=256
@@ -61,11 +62,16 @@ let g:tagbar_sort                                          = 1
 let g:rainbow_active                                       = 1 "set to 0 if you want to enable it later via :RainbowToggle
 "## Comentarios
 autocmd FileType apache setlocal commentstring             = #\ %s
+
 " nerdtree
 let g:NERDTreeMinimalUI                                    = 1
 let g:NERDTreeMinimalMenu                                  = 1
 let g:NERDTreeStatusline                                   = ''
 let g:NERDTreeChDirMode                                    = 2  " Change cwd to parent node
 let g:NERDTreeAutoDeleteBuffer                             = 1
-" Ignored files
 let g:NERDTreeIgnore                                       = [ '\.pyc$', '^__pycache__$', '^venv$', '^tags$', 'node_modules', '\.o$' ]
+
+" Icons
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
+let g:WebDevIconsNerdTreeAfterGlyphPadding = '' 
+let g:webdevicons_conceal_nerdtree_brackets=0

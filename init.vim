@@ -20,6 +20,7 @@ Plug 'lilydjwg/colorizer'                           " Colorea los codigos de col
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Busqueda Rapida con el comando :Files
 Plug 'junegunn/fzf.vim'                             " Busqueda Rapida con el comando :Files
 Plug 'terryma/vim-multiple-cursors'                 " permite hacer un Find Select
+Plug 'ryanoasis/vim-devicons'
 ": Languages
 Plug 'sheerun/vim-polyglot'                         " Multi lang
 Plug 'mattn/emmet-vim'                              " emmet
