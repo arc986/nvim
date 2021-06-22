@@ -5,6 +5,7 @@ set encoding=utf8
 set nocompatible
 set nowrap         " No wrap lines (display long lines)
 set relativenumber " Display line numbers
+set nu
 set cursorline     " Highlight current line
 set nojoinspaces   " Always use one space to join line
 set noshowmode
