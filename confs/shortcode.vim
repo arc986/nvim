@@ -35,13 +35,23 @@ inoremap <silent> <c-n> <Esc> :enew<CR>
 "# move lines up.
 nnoremap <silent> <c-up> :m.-2<CR> ==
 inoremap <silent> <c-up> <Esc> :m.-2<CR> == gi
-vnoremap <silent> <c-up> :m '<-2 <CR> gv = gv
+vnoremap <silent> <c-up> :m '<-2<CR> gv = gv
 
 "# move lines down.
 nnoremap <silent> <c-down> :m.+1<CR> ==
 inoremap <silent> <c-down> <Esc> :m.+1<CR> == gi
-vnoremap <silent> <c-down> :m '> +1 <CR> gv = gv
+vnoremap <silent> <c-down> :m '> +1<CR> gv = gv
 
 "# Indentation.
 vnoremap <silent> <tab> > <CR> gV = gv                                                                            
 vnoremap <silent> <s-tab> < <CR> gV = gv
+
+"# Copy
+vnoremap <silent> <c-c> Y <CR> ==
+nnoremap <silent> <c-c> Y <CR> ==
+inoremap <silent> <c-c> <Esc> Y <CR> == gi
+
+"# Paste
+vnoremap <silent> <c-v> o <Esc> p <CR> ==
+nnoremap <silent> <c-v> p <CR> ==
+inoremap <silent> <c-v> <Esc> p <CR> == gi
