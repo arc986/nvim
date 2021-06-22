@@ -31,3 +31,6 @@ vnoremap <silent> <c-up> :m '<-2 <CR> gv = gv
 nnoremap <silent> <c-down> :m.+1<CR> ==
 inoremap <silent> <c-down> <Esc> :m.+1<CR> == gi
 vnoremap <silent> <c-down> :m '> +1 <CR> gv = gv
+
+vnoremap <silent> <tab> > <CR> gV = gv                                                                            
+vnoremap <silent> <s-tab> < <CR> gV = gv
