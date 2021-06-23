@@ -22,6 +22,10 @@ set updatetime=300
 set shortmess+=c
 set hidden
 set cursorline
+set foldmethod=marker
+set foldnestmax=10
+set foldlevel=0
+set foldclose=all
 
 if has('macunix')
   let g:onedark_termcolors=256

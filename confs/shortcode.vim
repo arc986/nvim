@@ -1,4 +1,9 @@
 "## SHORTCODE
+
+"# collapse
+nnoremap <space> za
+nnoremap <c-space> zi
+
 "# change background color.
 nnoremap <silent> <F1> :call Toggle_background()<CR>
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
