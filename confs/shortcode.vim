@@ -1,57 +1,63 @@
 "## SHORTCODE
 "# change background color.
-:nmap <silent> <F1> :call Toggle_background()<CR>
-:nmap <silent> <F2> :NERDTreeToggle<CR>
-:nmap <silent> <F3> :TagbarToggle<CR>
+nnoremap <silent> <F1> :call Toggle_background()<CR>
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <F3> :TagbarToggle<CR>
 
 "# change current tabs.
-:nmap <silent> <tab> :bn!<CR>
-:nmap <silent> <c-b> :bn!<CR>
+nnoremap <silent> <tab> :bn!<CR>
+nnoremap <silent> <c-b> :bn!<CR>
 inoremap <silent> <c-b> <Esc> :bn!<CR>
 
 "# search files.
-:nmap <silent> <c-f> :Files<CR>
+nnoremap <silent> <c-f> :Files<CR>
 inoremap <silent> <c-f> <Esc> :Files<CR>
 
 "# closed tab.
-:nmap <silent> <c-x> :bd<CR>
+nnoremap <silent> <c-x> :bd<CR>
+vnoremap <silent> <c-x> :bd<CR>
+inoremap <silent> <c-x> <Esc> :bd<CR>
 
 "# save changes.
-:nmap <silent> <c-s> :w<CR>
-inoremap <silent> <c-s> <Esc> :w<CR>
+nnoremap <silent> <c-s> :w<CR>
+vnoremap <silent> <c-s> <Esc> :w<CR> == gv
+inoremap <silent> <c-s> <Esc> :w<CR> == gi
 
 "# undo.
-:nmap <silent> <c-z> :undo<CR>
+nnoremap <silent> <c-z> :undo<CR>
+vnoremap <silent> <c-z> :undo<CR>
 inoremap <silent> <c-z> <Esc> :undo<CR>
 
 "# redo.
-:nmap <silent> <c-y> :redo<CR>
+nnoremap <silent> <c-y> :redo<CR>
+vnoremap <silent> <c-y> :redo<CR>
 inoremap <silent> <c-y> <Esc> :redo<CR>
 
 "# new tabs or buffer.
-:nmap <silent> <c-n> :enew<CR>
+nnoremap <silent> <c-n> :enew<CR>
+vnoremap <silent> <c-n> <Esc> :enew<CR>
 inoremap <silent> <c-n> <Esc> :enew<CR>
 
 "# move lines up.
 nnoremap <silent> <c-up> :m.-2<CR> ==
-inoremap <silent> <c-up> <Esc> :m.-2<CR> == gi
 vnoremap <silent> <c-up> :m '<-2<CR> gv = gv
+inoremap <silent> <c-up> <Esc> :m.-2<CR> == gi
 
 "# move lines down.
 nnoremap <silent> <c-down> :m.+1<CR> ==
-inoremap <silent> <c-down> <Esc> :m.+1<CR> == gi
 vnoremap <silent> <c-down> :m '> +1<CR> gv = gv
+inoremap <silent> <c-down> <Esc> :m.+1<CR> == gi
 
 "# Indentation.
-vnoremap <silent> <tab> > <CR> gV = gv                                                                            
-vnoremap <silent> <s-tab> < <CR> gV = gv
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 "# Copy
-vnoremap <silent> <c-c> Y <CR> ==
-nnoremap <silent> <c-c> Y <CR> ==
-inoremap <silent> <c-c> <Esc> Y <CR> == gi
+vnoremap <c-c> Ygn
+nnoremap <c-c> Ygn
+inoremap <c-c> <Esc> Ygi
 
 "# Paste
-vnoremap <silent> <c-v> o <Esc> p <CR> ==
-nnoremap <silent> <c-v> p <CR> ==
-inoremap <silent> <c-v> <Esc> p <CR> == gi
+vnoremap <c-v> o <Esc> pgn
+nnoremap <c-v> pgn
+inoremap <c-v> <Esc> pgi
