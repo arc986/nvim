@@ -64,11 +64,11 @@ vnoremap <tab> >gv
 vnoremap <s-tab> <gv
 
 "# Copy
-vnoremap <c-c> Ygn
-nnoremap <c-c> Ygn
+nnoremap <c-c> Y ==
+vnoremap <c-c> Y ==
 inoremap <c-c> <Esc> Ygi
-
+ 
 "# Paste
-vnoremap <c-v> o <Esc> pgn
-nnoremap <c-v> pgn
-inoremap <c-v> <Esc> pgi
+nnoremap <c-v> p ==
+vnoremap <c-v> o <Esc> p ==
+inoremap <c-v> <Esc> pgi 
