@@ -1,5 +1,11 @@
 "## SHORTCODE
 
+"# Find similar or exactly
+nnoremap <c-f> g#
+vnoremap <c-f> <Esc> #
+nnoremap <a-up> n
+nnoremap <a-down> N
+
 "# collapse
 nnoremap <space> za
 nnoremap <c-space> zi
@@ -15,8 +21,8 @@ nnoremap <silent> <c-b> :bn!<CR>
 inoremap <silent> <c-b> <Esc> :bn!<CR>
 
 "# search files.
-nnoremap <silent> <c-f> :Files<CR>
-inoremap <silent> <c-f> <Esc> :Files<CR>
+nnoremap <silent> <a-f> :Files<CR>
+inoremap <silent> <a-f> <Esc> :Files<CR>
 
 "# closed tab.
 nnoremap <silent> <c-x> :bd<CR>
@@ -54,8 +60,8 @@ vnoremap <silent> <c-down> :m '> +1<CR> gv = gv
 inoremap <silent> <c-down> <Esc> :m.+1<CR> == gi
 
 "# Indentation.
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
+vnoremap <tab> >gv
+vnoremap <s-tab> <gv
 
 "# Copy
 vnoremap <c-c> Ygn

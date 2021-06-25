@@ -26,6 +26,7 @@ set foldmethod=marker
 set foldnestmax=10
 set foldlevel=0
 set foldclose=all
+set autoread
 
 if has('macunix')
   let g:onedark_termcolors=256
