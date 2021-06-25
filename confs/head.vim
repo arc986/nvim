@@ -21,7 +21,6 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set hidden
-set cursorline
 set foldmethod=marker
 set foldnestmax=10
 set foldlevel=0
