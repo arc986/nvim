@@ -2,6 +2,7 @@
 syntax enable
 scriptencoding utf-8
 set encoding=utf8
+set clipboard+=unnamedplus
 set nocompatible
 set nowrap         " No wrap lines (display long lines)
 set relativenumber " Display line numbers
